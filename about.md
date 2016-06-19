@@ -21,10 +21,3 @@ tujuan pembuatan website ini adalah
 
 Cukup Sekian perkenalan dan alasan  mengapa website ini dibuat heheheheh.
 
-<h2>Web Kampus</h2>
-
-<ul>
-	<li><a href="http://uin-suska.ac.id/">Link Kampus</a></li>
-	<li><a href="http://fst.uin-suska.ac.id/">Link Fakultas</a></li>
-	<li><a href="http://sif.uin-suska.ac.id/">Link Program Studi</a></li>
-</ul>
