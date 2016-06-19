@@ -5,8 +5,15 @@
 %}{% assign showHeader = true %}{% endif %}
 
 {% if showHeader == true %}
-    <header class="header-home {% if site.animation %}animated{% endif %}">
-      <table width="200" border="0">
+<header class="header-home {% if site.animation %}animated{% endif %}">     
+{% if site.about %}
+<a class="link" href="{{ site.url }}/about">
+<img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" /></a>
+{% else %}
+<span class="link">
+<img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" /></span>
+{% endif %}
+<table width="200" border="0">
   <tr>
     <td align="center"><audio controls><source src="{{site.url}}/assets/24l.mp3" type="audio/mpeg"></audio></td>
     <td align="center"><audio controls><source src="{{site.url}}/assets/24p.mp3" type="audio/mpeg"></audio></td>
@@ -14,20 +21,12 @@
   <tr>
     <td align="center">lagu laki-laki</td>
     <td align="center">suara perempuan</td>
-  </tr></table>
-        {% if site.about %}
-            <a class="link" href="{{ site.url }}/about">
-                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
-            </a>
-        {% else %}
-            <span class="link">
-                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
-            </span>
-        {% endif %}
+  </tr>
+  </table>
         <h3 class="title">{{ site.name }}</h3>
         <h4 class="description">{{ site.bio }}</h4>
 </header>
 {% endif %}
 <p class="extra">
-<a class="link" href="http://uin-suska.ac.id/">@Kampusku</a> | <a class="link" href="http://fst.uin-suska.ac.id">@fakultasku</a> | <a class="link" href="http://sif.uin-suska.ac.id">@Program Studi</a>
+<a class="link" href="http://uin-suska.ac.id/" align="center">@Kampusku</a> | <a class="link" href="http://fst.uin-suska.ac.id" align="center">@fakultasku</a> | <a class="link" href="http://sif.uin-suska.ac.id" align="center">@Program Studi</a>
 </p>
