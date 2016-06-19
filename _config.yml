@@ -34,7 +34,7 @@ highlighter: rouge
 # linkedin: mylinkedin
 #youtube: myyoutube
 #spotify: myspotify
-github: https://sifuinsuskariau.github.io/
+github: sifuinsuskariau.github.io/
 #medium: medium
 #vimeo: myvimeo
 email: adnil.riza@gmail.com
@@ -52,8 +52,8 @@ width: normal
 projects: true
 
 # if you don't need "about" or "blog", comment them out below
-about: false
-blog: true
+about: true
+blog: false
 
 # do you want to show the "read time" of the posts?
 read-time: true
